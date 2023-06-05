@@ -20,6 +20,6 @@ let flipdata = function(){
         isalluarjuncur = true;
     }
     document.getElementById("alluarjun-img").src = displayobject.imgurl;
-    document.getElementById("alluarjun-name").inner.HTML= displayobject.name;
-    document.getElementById("alluarjun-designation").inner.HTML= displayobject.designation;
+    document.getElementById("alluarjun-name").innerHTML= displayobject.name;
+    document.getElementById("alluarjun-designation").innerHTML= displayobject.Description;
 }
