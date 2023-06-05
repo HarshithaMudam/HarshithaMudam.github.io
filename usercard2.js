@@ -1,23 +1,23 @@
-let alluarjuncurinfo ={
+let alluarjunyounginfo ={
     imgurl: "https://tse1.mm.bing.net/th?id=OIP.cpguvYPuYTC_K3q5q-GHhQHaFg&pid=Api&P=0&h=180",
     name: "Allu Arjun",
     Description: "Indian Actor"
 }
-let alluarjunchildhoodinfo ={
+let alluarjunchildinfo ={
     imgurl= "https://tse4.mm.bing.net/th?id=OIP.NocGkGQIiQ9Cztc_n58t-gHaJD&pid=Api&P=0&h=180",
     name : "Bunny",
     Description: "stylish star"
 }
-let isalluarjuncur = true;
+let isalluarjunyoung = true;
 let displayobject;
 let flipdata = function(){
-    if(isalluarjuncur  == true){
-        displayobject = alluarjunchildhoodinfo;
-        isalluarjuncur = false;
+    if(isalluarjunyoung  == true){
+        displayobject = alluarjunchildinfo;
+        isalluarjunyoung = false;
     }
     else{
-        displayobject = alluarjuncurinfo;
-        isalluarjuncur = true;
+        displayobject = alluarjunyounginfo;
+        isalluarjunyoung = true;
     }
     document.getElementById("alluarjun-img").src = displayobject.imgurl;
     document.getElementById("alluarjun-name").innerHTML= displayobject.name;
