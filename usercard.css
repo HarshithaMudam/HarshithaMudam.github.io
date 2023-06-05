@@ -17,3 +17,6 @@
 .cardbody-designation{
     font-style: italic;
 }
+.card:hover{
+    box-shadow: 0 20px 32px o rgba(0,0,0,0.2);
+}
