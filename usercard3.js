@@ -10,10 +10,11 @@ let getRandomUser = function(){
     fetch("https://randomuser.me/api")
     .then(response => response.json())
     .then(data=>{
-        displayobject.name = data.results[0].name.first + " "+data.results[0].name.last
+        //displayobject.name = data.results[0].name.first + " "+data.results[0].name.last
+        displayobject.name = "User Nmae"
+        //displayobject.imageurl = data.results[0].picture.large
+        //displayobject.Description = data.results[0].genger
         document.getElementById("alluarjun-img").src = displayobject.imgurl;
-        displayobject.imageurl = data.results[0].picture.large
-        displayobject.Description = data.results[0].genger
         document.getElementById("alluarjun-name").innerHTML= displayobject.name;
         document.getElementById("alluarjun-designation").innerHTML= displayobject.Description;
     })
