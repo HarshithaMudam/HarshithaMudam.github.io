@@ -7,7 +7,7 @@ let alluarjunyounginfo ={
 
 let displayobject = {
     name :"",
-    imgurl:"",
+    imageurl:"",
     Description:""
 };
 let getRandomUser = function(){
@@ -16,9 +16,9 @@ let getRandomUser = function(){
     .then(data=>{
         displayobject.name = data.results[0].name.first + " "+data.results[0].name.last
         //displayobject.name = "User Name"
-        displayobject.imgurl = data.results[0].picture.large
+        displayobject.imageurl = data.results[0].picture.large
         displayobject.Description = data.results[0].genger
-        document.getElementById("alluarjun-img").src = displayobject.imgurl;
+        document.getElementById("alluarjun-img").src = displayobject.imageurl;
         document.getElementById("alluarjun-name").innerHTML= displayobject.name;
         document.getElementById("alluarjun-designation").innerHTML= displayobject.Description;
     })
